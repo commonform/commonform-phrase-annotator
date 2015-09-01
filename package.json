@@ -1,7 +1,7 @@
 {
   "name": "commonform-phrase-annotator",
   "description": "create Common Form annotators from lists of words and phrases",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
   "dependencies": {
     "commonform-regexp-annotator": "^1.0.1"
