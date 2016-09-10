@@ -12,6 +12,9 @@
     "replace-require-self": "1.x",
     "standard": "^8.0.0"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "contracts",
     "document assembly",
@@ -22,7 +25,7 @@
   "license": "Apache-2.0",
   "repository": "commonform/commonform-phrase-annotator",
   "scripts": {
-    "test": "defence README.md | replace-require-self | node",
-    "lint": "standard"
+    "lint": "standard",
+    "test": "defence README.md | replace-require-self | node"
   }
 }
