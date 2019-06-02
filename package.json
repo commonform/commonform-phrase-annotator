@@ -8,7 +8,7 @@
     "escape-regexp": "0.0.1"
   },
   "devDependencies": {
-    "defence-cli": "1.x",
+    "defence-cli": "^3.0.1",
     "replace-require-self": "1.x",
     "standard": "^8.0.0"
   },
