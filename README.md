@@ -1,3 +1,5 @@
+# commonform-phrase-annotator
+
 The module exports a single function that takes an array of strings and a function for generating annotations, returning an annotator function to apply to Common Forms.
 
 ```javascript
