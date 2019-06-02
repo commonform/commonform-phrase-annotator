@@ -9,7 +9,7 @@ var phrases = ['thereof', 'whereof']
 The annotation function receives the form in which a string was found, its path within the overall form, and the string that matches. It must return a [Common Form Annotations](https://npmjs.com/packages/commonform-annotation).
 
 ```javascript
-function annotator (form, path, string) {
+function implementation (form, path, string) {
   return {
     message: '"' + string + '" is archaic',
     path: path,
@@ -20,7 +20,7 @@ function annotator (form, path, string) {
 
 var phraseAnnotator = require('commonform-phrase-annotator')
 
-var annotator = phraseAnnotator(phrases, annotator)
+var annotator = phraseAnnotator(phrases, implementation)
 ```
 
 The library does the job of finding matches and calculating paths.
@@ -28,8 +28,8 @@ The library does the job of finding matches and calculating paths.
 ```javascript
 var assert = require('assert')
 
-assert.deepEqual(
-  annotator({content: ['all rights thereof and whereof']}),
+assert.deepStrictEqual(
+  annotator({ content: ['all rights thereof and whereof'] }),
   [
     {
       message: '"thereof" is archaic',
